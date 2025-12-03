@@ -1,6 +1,6 @@
 use clap::Parser;
 
-use aoc25::day1;
+use aoc25::day01;
 
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
@@ -16,8 +16,8 @@ fn main() {
     let args = Args::parse();
 
     let res = match (args.day, args.part) {
-        (1, 1) => day1::part1(),
-        (1, 2) => day1::part2(),
+        (1, 1) => day01::part1(),
+        (1, 2) => day01::part2(),
         _ => panic!("invalid (day, part)"),
     };
 
