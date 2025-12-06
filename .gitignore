@@ -1,4 +1,4 @@
 /target
 
-inputs/*.txt
-!inputs/*_sample.txt
+inputs/**/*.txt
+!inputs/**/*_sample.txt
